@@ -58,7 +58,7 @@ int find_sum(Sum* p, int i, int j, int l)
         return p->sum;
     else
     {
-        int ll = l >> 1;
+        int ll = p->len >> 1;
         if (p->x + ll > i && p->y + ll > j)
             return find_sum(p->lt, i, j, l);
         if (p->x + ll <= i && p->y + ll > j)
